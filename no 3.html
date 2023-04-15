@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biodata</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+      }
+      header {
+        background-color: #2196f3;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        border-bottom: 5px solid #1976d2;
+      }
+      form {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin: 20px auto;
+        max-width: 600px;
+        padding: 20px;
+      }
+      form label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #555;
+      }
+      form input[type="text"],
+      form input[type="number"],
+      form textarea {
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        box-sizing: border-box;
+        padding: 10px;
+        width: 100%;
+        margin-bottom: 15px;
+        font-size: 16px;
+        color: #555;
+      }
+      form textarea {
+        height: 100px;
+      }
+      form input[type="submit"] {
+        background-color: #2196f3;
+        border: none;
+        border-radius: 3px;
+        color: white;
+        cursor: pointer;
+        padding: 10px;
+        width: 100%;
+        font-size: 16px;
+        margin-top: 10px;
+        transition: background-color 0.3s ease-in-out;
+      }
+      form input[type="submit"]:hover {
+        background-color: #1976d2;
+      }
+      h1,
+      p {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Biodata</h1>
+    </header>
+    <form action="biodata.php" method="POST">
+      <label for="name">Nama:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="age">Umur:</label>
+      <input type="number" id="age" name="age" required />
+
+      <label for="address">Alamat:</label>
+      <textarea id="address" name="address" required></textarea>
+
+      <label for="job">Pekerjaan:</label>
+      <input type="text" id="job" name="job" required />
+
+      <input type="submit" value="Simpan" />
+    </form>
+  </body>
+</html>
